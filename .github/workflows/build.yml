@@ -75,5 +75,6 @@ jobs:
       - name: Deploy
         env:
           GITHUB_TOKEN: ${{ secrets.WORKSHOP6_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.WORKSHOP6_GITHUB_TOKEN }}
         run: |
           npm run deploy -- --no-silent
